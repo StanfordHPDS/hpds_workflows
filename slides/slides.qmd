@@ -153,6 +153,7 @@ options(
 
 - Visibility and thriving improve productivity in the traditional sense
 - Visibility and collaboration improve rigor and reproducibility
+- "rituals of reproducibility"
 
 ## Brittle productivity
 
