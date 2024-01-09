@@ -1,0 +1,183 @@
+---
+title: "Principles and Patterns of Code Workflows"
+author: "Malcolm Barrett"
+format: kakashi-revealjs
+---
+
+# **Principles and Patterns of Code Workflows** {background-color="#23373B"}
+
+```{r setup, include=FALSE}
+options(
+  tibble.max_extra_cols = 6, 
+  tibble.width = 60
+)
+```
+
+## Principle: Readability (Code Style)
+
+- **Pattern**: tidyverse style guide, styler, black, ruff
+- **Anti-pattern**: Everyone has a unique style, someworsethanothers
+
+## Principle: Readability (Organization)
+
+- Ability to navigate and understand code in a project
+- **Pattern**: Predictable, self-documenting file structure; minimal but principled requirements
+- **Anti-pattern**: 1 4,000-line long R file
+- There's a reason most novels have chapters and sections
+
+## Principle: Dynamic Documents
+
+- **Pattern**: Quarto, R Markdown, sometimes Jupyter
+- **Anti-pattern**: Copying & pasting results into tables, out-of-order Jupyter notebooks, R scripts that don't match the code you actually ran
+
+## Principle: Reproducibility Through Blank Slates
+
+- **Pattern**: Fresh R session, Quarto, "Restart kernel and run all cells"
+- **Anti-pattern**: reuse of environment, leading to unseen dependencies; lossy code
+
+## Principle: Documentation and Naming Things
+
+- **Pattern**: comments, self-documenting code, docstrings, roxygen2
+- **Anti-pattern**: terse object names, lack of written documentation
+
+## Principle: Sharing Code
+
+- **Pattern**: public on GH; published on OSF; published on CRAN, PyPI, etc.
+- **Anti-pattern**: "code available upon request", project telephone
+
+## Principle: Run What Needs to Be Run and In the Right Order
+
+- **Pattern**: Sequence files `01-data`, `02-wrangling`, `03-...`; function-based; targets, make, knitr caches
+- **Anti-pattern**: Run everything everytime, lossy code (what's written doesn't match what's been run, not clear which state is "correct")
+
+## Principle: Code Review (Length)
+
+- **Pattern**: Features, bug fixes, checkpoints
+- **Anti-pattern**: Dozens of files meaningfully changed; no clear focus on what to review; thousands of lines of code, at the end of a project
+
+---
+
+## {background-color="#23373B" .large}
+
+> **"I'm sorry to have written such a long letter; I didn't have time to write a short one."** - *(Not) Abraham Lincoln*
+
+## Principle: Code Review (Frequency and priority)
+
+- **Pattern**: PR workflow, making time to review, being clear about timeline, can review in about a sitting
+- **Anti-pattern**: Often merging w/o review, being blocked by review
+- Code review IS progress. Besides, it's good to step out of your code hole
+
+## {background-color="#23373B" .large}
+
+> **"The best way is always to stop when you are going good and when you know what will happen next. If you do that every day when you are writing a novel you will never be stuck. That is the most valuable thing I can tell you so try to remember it."** - *Ernest Hemingway*
+
+## Principle: Running Code across Space and Time
+
+- **Pattern**: Documented dependencies & installation instructions, renv, pyenv, conda, Docker
+- **Anti-pattern**: Not obvious which libraries used, unknown versions of R or Python, "it works on my machine"
+
+## Principle: Managing and Documenting Code Changes
+
+- **Pattern**: git, PR workflows on git hosting services, change history
+- **Anti-pattern**: A single file on a single computer, the garden of forking email attachments
+
+## Emerging Principle: Code Interoperability
+
+- **Pattern**: data engineering, arrow, Quarto, browser-based tools, cross-language tools (polars)
+- **Anti-pattern**: treating every language the same (polars); ??
+
+# **Levels of Code Durability** {background-color="#23373B"}
+
+## Level 0
+- Run code in an interactive environment like R console or Notebook
+- *Half-life*: a few days
+
+## Level 1
+- Write code down in the sequence it was run.
+- *Half-life*: a few weeks, maybe months
+
+## Level 2
+- Locking software versions
+- *Half-life*: a few years
+
+## Level 3
+- Locking entire computational environment
+- *Half-life*: unknown, maybe decades, possibly significantly less
+
+## **Goals**
+
+- Get as high up this ladder as possible by *default*, e.g., easy to reach Level 2 on every project.
+- Make it clear how and when to reach higher or lower levels.
+
+# **Translating Engineering Workflows to Research** {background-color="#23373B"}
+
+## Code review gates
+
+- Key checkpoints in a research project (e.g., data import, descriptive tables, modeling, stages of writing).
+- As many reviews in between as you like, but you must commit to doing *at least* the code review gates
+
+## Meetings and scrum
+- The goal of scrum is to improve and make visible all stages of work, not just outputs (as in traditional lab meetings)
+- Scrum is a framework for organizing work, not a set of rules
+
+## Regular, short checkups
+- e.g, daily stand-ups 
+- *improves*: feedback on work in progress, visibility, collaboration 
+
+## Planning for defined periods
+- e.g., sprint planning 
+- *improves*: feedback on work plan, short-term goals, accountability 
+- Research is a big project. It helps to have a clear sense of what to do next and to have a sense of progress.
+
+## Presenting work
+- e.g., traditional lab meetings, sprint demos/reviews 
+- improves: feedback on work product, visibility via focused updates
+
+## Improving team work process
+- e.g., sprint retrospectives (what went well, what could be improved, what to try next)
+- improves: feedback on work process, team agency over process
+- continuous improvement. team agreements are living documents. 
+
+# **Researcher thriving** {background-color="#23373B"}
+
+## What does the science say about developer thriving?
+- The Good Day Project: focus time and collaboration time in balance
+  - focus time -> collaboration time  -> focus time -> collaboration time
+  - loneliness/siloing -> disruption -> loneliness/siloing -> disruption
+  
+## What does the science say about developer thriving?
+
+- Developer Thriving: agency, learning culture, motivation + self-efficacy, support + belonging
+
+## How does this relate to workflows?
+
+- Visibility and thriving improve productivity in the traditional sense
+- Visibility and collaboration improve rigor and reproducibility
+
+## Brittle productivity
+
+- Hard, lonely, non-stop
+
+## Resilient productivity
+
+- Thriving, collaborative, sustainable and adaptive
+
+## The virtuous cycle of rigor and resilience
+
+- Rigor -> reproducibility -> clear workflows -> collaboration -> resilient productivity -> rigor
+
+# **Action Items** {background-color="#23373B"}
+
+## Team agreements
+- Code review
+- Code style
+- Level and approach to reproducibility
+- Dynamic documents
+- File organization minimal requirements
+
+## Resources {background-color="#23373B"}
+
+### [Lab Scrum](https://labscrum.org/)
+### [The Good Day Project](https://github.blog/2021-05-25-octoverse-spotlight-good-day-project/)
+### [Where we’re going wrong with developer productivity (Cat Hicks)](https://www.youtube.com/watch?v=LLJCut3VwwQ), [Developer Success Lab site](https://www.pluralsight.com/product/flow/developer-success-lab)
+### [Letter to a young maintainer (Hadley Wickham)](https://www.youtube.com/watch?v=1K7u5hkciLI)
