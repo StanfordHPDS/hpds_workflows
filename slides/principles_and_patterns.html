@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="slides_files/libs/clipboard/clipboard.min.js"></script>
-<script src="slides_files/libs/quarto-html/tabby.min.js"></script>
-<script src="slides_files/libs/quarto-html/popper.min.js"></script>
-<script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="principles_and_patterns_files/libs/clipboard/clipboard.min.js"></script>
+<script src="principles_and_patterns_files/libs/quarto-html/tabby.min.js"></script>
+<script src="principles_and_patterns_files/libs/quarto-html/popper.min.js"></script>
+<script src="principles_and_patterns_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="principles_and_patterns_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="principles_and_patterns_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="principles_and_patterns_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="principles_and_patterns_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.358">
 
   <meta name="author" content="Malcolm Barrett">
@@ -15,8 +15,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="principles_and_patterns_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="principles_and_patterns_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -30,11 +30,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="slides_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="principles_and_patterns_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="principles_and_patterns_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="principles_and_patterns_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="principles_and_patterns_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="principles_and_patterns_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -337,11 +337,6 @@ Malcolm Barrett
 </div>
 
 </section>
-<section>
-<section id="principles-and-patterns-of-code-workflows" class="title-slide slide level1 center" data-background-color="#23373B">
-<h1><strong>Principles and Patterns of Code Workflows</strong></h1>
-
-</section>
 <section id="principle-readability-code-style" class="slide level2">
 <h2>Principle: Readability (Code Style)</h2>
 <ul>
@@ -440,7 +435,7 @@ Malcolm Barrett
 <li class="fragment"><strong>Pattern</strong>: data engineering, arrow, Quarto, browser-based tools, cross-language tools (polars)</li>
 <li class="fragment"><strong>Anti-pattern</strong>: treating every language the same (polars); ??</li>
 </ul>
-</section></section>
+</section>
 <section>
 <section id="levels-of-code-durability" class="title-slide slide level1 center" data-background-color="#23373B">
 <h1><strong>Levels of Code Durability</strong></h1>
@@ -482,101 +477,6 @@ Malcolm Barrett
 </ul>
 </section></section>
 <section>
-<section id="translating-engineering-workflows-to-research" class="title-slide slide level1 center" data-background-color="#23373B">
-<h1><strong>Translating Engineering Workflows to Research</strong></h1>
-
-</section>
-<section id="code-review-gates" class="slide level2">
-<h2>Code review gates</h2>
-<ul>
-<li class="fragment">Key checkpoints in a research project (e.g., data import, descriptive tables, modeling, stages of writing).</li>
-<li class="fragment">As many reviews in between as you like, but you must commit to doing <em>at least</em> the code review gates</li>
-</ul>
-</section>
-<section id="meetings-and-scrum" class="slide level2">
-<h2>Meetings and scrum</h2>
-<ul>
-<li class="fragment">The goal of scrum is to improve and make visible all stages of work, not just outputs (as in traditional lab meetings)</li>
-<li class="fragment">Scrum is a framework for organizing work, not a set of rules</li>
-</ul>
-</section>
-<section id="regular-short-checkups" class="slide level2">
-<h2>Regular, short checkups</h2>
-<ul>
-<li class="fragment">e.g, daily stand-ups</li>
-<li class="fragment"><em>improves</em>: feedback on work in progress, visibility, collaboration</li>
-</ul>
-</section>
-<section id="planning-for-defined-periods" class="slide level2">
-<h2>Planning for defined periods</h2>
-<ul>
-<li class="fragment">e.g., sprint planning</li>
-<li class="fragment"><em>improves</em>: feedback on work plan, short-term goals, accountability</li>
-<li class="fragment">Research is a big project. It helps to have a clear sense of what to do next and to have a sense of progress.</li>
-</ul>
-</section>
-<section id="presenting-work" class="slide level2">
-<h2>Presenting work</h2>
-<ul>
-<li class="fragment">e.g., traditional lab meetings, sprint demos/reviews</li>
-<li class="fragment">improves: feedback on work product, visibility via focused updates</li>
-</ul>
-</section>
-<section id="improving-team-work-process" class="slide level2">
-<h2>Improving team work process</h2>
-<ul>
-<li class="fragment">e.g., sprint retrospectives (what went well, what could be improved, what to try next)</li>
-<li class="fragment">improves: feedback on work process, team agency over process</li>
-<li class="fragment">continuous improvement. team agreements are living documents.</li>
-</ul>
-</section></section>
-<section>
-<section id="researcher-thriving" class="title-slide slide level1 center" data-background-color="#23373B">
-<h1><strong>Researcher thriving</strong></h1>
-
-</section>
-<section id="what-does-the-science-say-about-developer-thriving" class="slide level2">
-<h2>What does the science say about developer thriving?</h2>
-<ul>
-<li class="fragment">The Good Day Project: focus time and collaboration time in balance
-<ul>
-<li class="fragment">focus time -&gt; collaboration time -&gt; focus time -&gt; collaboration time</li>
-<li class="fragment">loneliness/siloing -&gt; disruption -&gt; loneliness/siloing -&gt; disruption</li>
-</ul></li>
-</ul>
-</section>
-<section id="what-does-the-science-say-about-developer-thriving-1" class="slide level2">
-<h2>What does the science say about developer thriving?</h2>
-<ul>
-<li class="fragment">Developer Thriving: agency, learning culture, motivation + self-efficacy, support + belonging</li>
-</ul>
-</section>
-<section id="how-does-this-relate-to-workflows" class="slide level2">
-<h2>How does this relate to workflows?</h2>
-<ul>
-<li class="fragment">Visibility and thriving improve productivity in the traditional sense</li>
-<li class="fragment">Visibility and collaboration improve rigor and reproducibility</li>
-</ul>
-</section>
-<section id="brittle-productivity" class="slide level2">
-<h2>Brittle productivity</h2>
-<ul>
-<li class="fragment">Hard, lonely, non-stop</li>
-</ul>
-</section>
-<section id="resilient-productivity" class="slide level2">
-<h2>Resilient productivity</h2>
-<ul>
-<li class="fragment">Thriving, collaborative, sustainable and adaptive</li>
-</ul>
-</section>
-<section id="the-virtuous-cycle-of-rigor-and-resilience" class="slide level2">
-<h2>The virtuous cycle of rigor and resilience</h2>
-<ul>
-<li class="fragment">Rigor -&gt; reproducibility -&gt; clear workflows -&gt; collaboration -&gt; resilient productivity -&gt; rigor</li>
-</ul>
-</section></section>
-<section>
 <section id="action-items" class="title-slide slide level1 center" data-background-color="#23373B">
 <h1><strong>Action Items</strong></h1>
 
@@ -590,13 +490,6 @@ Malcolm Barrett
 <li class="fragment">Dynamic documents</li>
 <li class="fragment">File organization minimal requirements</li>
 </ul>
-</section>
-<section id="resources" class="slide level2" data-background-color="#23373B">
-<h2>Resources</h2>
-<h3 id="lab-scrum"><a href="https://labscrum.org/">Lab Scrum</a></h3>
-<h3 id="the-good-day-project"><a href="https://github.blog/2021-05-25-octoverse-spotlight-good-day-project/">The Good Day Project</a></h3>
-<h3 id="where-were-going-wrong-with-developer-productivity-cat-hicks-developer-success-lab-site"><a href="https://www.youtube.com/watch?v=LLJCut3VwwQ">Where we’re going wrong with developer productivity (Cat Hicks)</a>, <a href="https://www.pluralsight.com/product/flow/developer-success-lab">Developer Success Lab site</a></h3>
-<h3 id="letter-to-a-young-maintainer-hadley-wickham"><a href="https://www.youtube.com/watch?v=1K7u5hkciLI">Letter to a young maintainer (Hadley Wickham)</a></h3>
 <div class="footer footer-default">
 
 </div>
@@ -605,19 +498,19 @@ Malcolm Barrett
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="slides_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="principles_and_patterns_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="principles_and_patterns_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="principles_and_patterns_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="principles_and_patterns_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="principles_and_patterns_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="principles_and_patterns_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="slides_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="principles_and_patterns_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="principles_and_patterns_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="principles_and_patterns_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="principles_and_patterns_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

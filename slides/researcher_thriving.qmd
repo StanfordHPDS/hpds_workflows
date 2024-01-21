@@ -1,0 +1,45 @@
+---
+title: "Researcher thriving"
+author: "Malcolm Barrett"
+format: kakashi-revealjs
+---
+
+```{r setup, include=FALSE}
+options(
+  tibble.max_extra_cols = 6, 
+  tibble.width = 60
+)
+```
+
+## What does the science say about developer thriving?
+- The Good Day Project: focus time and collaboration time in balance
+  - focus time -> collaboration time  -> focus time -> collaboration time
+  - loneliness/siloing -> disruption -> loneliness/siloing -> disruption
+  
+## What does the science say about developer thriving?
+
+- Developer Thriving: agency, learning culture, motivation + self-efficacy, support + belonging
+
+## How does this relate to workflows?
+
+- Visibility and thriving improve productivity in the traditional sense
+- Visibility and collaboration improve rigor and reproducibility
+- "rituals of reproducibility"
+
+## Brittle productivity
+
+- Hard, lonely, non-stop
+
+## Resilient productivity
+
+- Thriving, collaborative, sustainable and adaptive
+
+## The virtuous cycle of rigor and resilience
+
+- Rigor -> reproducibility -> clear workflows -> collaboration -> resilient productivity -> rigor
+
+## Resources {background-color="#23373B"}
+
+### [The Good Day Project](https://github.blog/2021-05-25-octoverse-spotlight-good-day-project/)
+### [Where we’re going wrong with developer productivity (Cat Hicks)](https://www.youtube.com/watch?v=LLJCut3VwwQ), [Developer Success Lab site](https://www.pluralsight.com/product/flow/developer-success-lab)
+### [Letter to a young maintainer (Hadley Wickham)](https://www.youtube.com/watch?v=1K7u5hkciLI)

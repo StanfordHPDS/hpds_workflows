@@ -4,8 +4,6 @@ author: "Malcolm Barrett"
 format: kakashi-revealjs
 ---
 
-# **Principles and Patterns of Code Workflows** {background-color="#23373B"}
-
 ```{r setup, include=FALSE}
 options(
   tibble.max_extra_cols = 6, 
@@ -50,9 +48,9 @@ options(
 - **Pattern**: Sequence files `01-data`, `02-wrangling`, `03-...`; function-based; targets, make, knitr caches
 - **Anti-pattern**: Run everything everytime, lossy code (what's written doesn't match what's been run, not clear which state is "correct")
 
-## Principle: Code Review (Length)
+## Principle: Understandable code reviews
 
-- **Pattern**: Features, bug fixes, checkpoints
+- **Pattern**: Features, bug fixes, checkpoints, a few hundered lines of code max
 - **Anti-pattern**: Dozens of files meaningfully changed; no clear focus on what to review; thousands of lines of code, at the end of a project
 
 ---
@@ -61,7 +59,7 @@ options(
 
 > **"I'm sorry to have written such a long letter; I didn't have time to write a short one."** - *(Not) Abraham Lincoln*
 
-## Principle: Code Review (Frequency and priority)
+## Principle: Maintaining the velocity of code reviews
 
 - **Pattern**: PR workflow, making time to review, being clear about timeline, can review in about a sitting
 - **Anti-pattern**: Often merging w/o review, being blocked by review
@@ -109,76 +107,12 @@ options(
 - Get as high up this ladder as possible by *default*, e.g., easy to reach Level 2 on every project.
 - Make it clear how and when to reach higher or lower levels.
 
-# **Translating Engineering Workflows to Research** {background-color="#23373B"}
-
-## Code review gates
-
-- Key checkpoints in a research project (e.g., data import, descriptive tables, modeling, stages of writing).
-- As many reviews in between as you like, but you must commit to doing *at least* the code review gates
-
-## Meetings and scrum
-- The goal of scrum is to improve and make visible all stages of work, not just outputs (as in traditional lab meetings)
-- Scrum is a framework for organizing work, not a set of rules
-
-## Regular, short checkups
-- e.g, daily stand-ups 
-- *improves*: feedback on work in progress, visibility, collaboration 
-
-## Planning for defined periods
-- e.g., sprint planning 
-- *improves*: feedback on work plan, short-term goals, accountability 
-- Research is a big project. It helps to have a clear sense of what to do next and to have a sense of progress.
-
-## Presenting work
-- e.g., traditional lab meetings, sprint demos/reviews 
-- improves: feedback on work product, visibility via focused updates
-
-## Improving team work process
-- e.g., sprint retrospectives (what went well, what could be improved, what to try next)
-- improves: feedback on work process, team agency over process
-- continuous improvement. team agreements are living documents. 
-
-# **Researcher thriving** {background-color="#23373B"}
-
-## What does the science say about developer thriving?
-- The Good Day Project: focus time and collaboration time in balance
-  - focus time -> collaboration time  -> focus time -> collaboration time
-  - loneliness/siloing -> disruption -> loneliness/siloing -> disruption
-  
-## What does the science say about developer thriving?
-
-- Developer Thriving: agency, learning culture, motivation + self-efficacy, support + belonging
-
-## How does this relate to workflows?
-
-- Visibility and thriving improve productivity in the traditional sense
-- Visibility and collaboration improve rigor and reproducibility
-- "rituals of reproducibility"
-
-## Brittle productivity
-
-- Hard, lonely, non-stop
-
-## Resilient productivity
-
-- Thriving, collaborative, sustainable and adaptive
-
-## The virtuous cycle of rigor and resilience
-
-- Rigor -> reproducibility -> clear workflows -> collaboration -> resilient productivity -> rigor
-
 # **Action Items** {background-color="#23373B"}
 
 ## Team agreements
+
 - Code review
 - Code style
 - Level and approach to reproducibility
 - Dynamic documents
 - File organization minimal requirements
-
-## Resources {background-color="#23373B"}
-
-### [Lab Scrum](https://labscrum.org/)
-### [The Good Day Project](https://github.blog/2021-05-25-octoverse-spotlight-good-day-project/)
-### [Where we’re going wrong with developer productivity (Cat Hicks)](https://www.youtube.com/watch?v=LLJCut3VwwQ), [Developer Success Lab site](https://www.pluralsight.com/product/flow/developer-success-lab)
-### [Letter to a young maintainer (Hadley Wickham)](https://www.youtube.com/watch?v=1K7u5hkciLI)
