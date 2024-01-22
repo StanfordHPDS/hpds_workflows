@@ -109,10 +109,15 @@ options(
 
 # **Action Items** {background-color="#23373B"}
 
+## Survey
+
+https://forms.gle/QseMkWcg72jitGES6 
+
 ## Team agreements
 
-- Code review
+- Code review (see [draft](https://github.com/StanfordHPDS/hpds_workflows/blob/main/code_review_guidelines.md) in this repo)
 - Code style
 - Level and approach to reproducibility
 - Dynamic documents
 - File organization minimal requirements
+
